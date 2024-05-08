@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <title>Fanáticos Página Inicial</title>
+</head>
+<body class="" style="background-image: url(../Imagens/preto)" >
+    <nav class="navbar navbar-expand-lg" style="background-color:rgba(255, 255, 255, 0.87);">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: rgb(0, 0, 0);"  href="#">Fanáticos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"  style="color: rgb(0, 0, 0);" href="#">Pagina Inicial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"style="color: rgb(0, 0, 0);;" href="../HTML/sobre.html">Quem somos?</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color: rgb(0, 0, 0);"aria-expanded="false">
+                  Mais opções
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../HTML/catalogo.html">Catálogo</a></li>
+                  <li><a class="dropdown-item" href="#">Localização</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Lançamentos</a></li>
+                </ul>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Enviar</button>
+            </form>
+
+
+          </div>
+        </div>
+      </nav>
+
+      <h2 style="color:rgb(0, 0, 0); background-color:rgba(255, 255, 255, 0.87);" class="fst-italic">Principais Produtos: </h2>
+      <br><br>
+
+
+      </div>
+       <!--Carrosel-->
+       <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{url_for('static',filename='imagens/camisa palmeiras 2024.png')}}"> class="rounded mx-auto d-block" width="35%" alt="2024">
+          </div>
+          <div class="carousel-item">
+            <img src="../Imagens/camisa palmeiras 2024 branca.png" class="rounded mx-auto d-block, d-block w-15" width="35%" alt="2024 branca">
+          </div>
+          <div class="carousel-item">
+            <img src="../Imagens/camisa azul.png" class="rounded mx-auto d-block" width="29%" alt="samsung">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <br><br><br>
+      </div>
+      <a href="../HTML/palmeiras.html">
+        <img src="../Imagens/logo palmeiras" class="float-start" width="5%" alt="2024">
+      </a>
+
+      <a href="../HTML/vasco.html">
+        <img src="../Imagens/Escudo_Vasco_2015.png" class="float-end" width="5%" alt="2024">
+      </a>
+
+      <a href="../HTML/real.html">
+        <img src="../Imagens/Real_Madrid.png" class="mx-auto d-block" width="5%" alt="2024">
+      </a>
+
+
+
+</body>
+</html>
