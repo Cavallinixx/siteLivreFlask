@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<body class="">
+    <div class="p-3 mb-2 bg-black text-white">
+        <form class="form">
+            <p class="title">Cadastro </p>
+            <p class="message"></p>
+                <div class="flex">
+                <label>
+                    <input class="input" type="text" placeholder="" required="">
+                    <span>Primeiro Nome</span>
+                </label>
+
+                <label>
+                    <input class="input" type="text" placeholder="" required="">
+                    <span>Sobrenome</span>
+                </label>
+            </div>
+
+            <label>
+                <input class="input" type="email" placeholder="" required="">
+                <span>Email</span>
+            </label>
+
+            <label>
+                <input class="input" type="password" placeholder="" required="">
+                <span>Password</span>
+            </label>
+            <label>
+                <input class="input" type="password" placeholder="" required="">
+                <span>Confirmar password</span>
+            </label>
+            <button class="submit">Criar</button>
+            <p class="signin">Já tem uma conta ? <a href="/login">Entrar</a> </p>
+        </form>
+    </div>
+</body>
+{% endblock %}

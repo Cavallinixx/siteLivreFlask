@@ -1,49 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
-<body class="">
-    <nav class="navbar navbar-expand-lg" style="background-color:rgba(255, 255, 255, 0.87);">
-        <div class="container-fluid">
-          <a class="navbar-brand" style="color: rgb(0, 0, 0);"  href="#">Fanáticos</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+{% extends 'base.html' %}
+{% block conteudo %}
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page"  style="color: rgb(0, 0, 0);" href="#">Pagina Inicial</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"style="color: rgb(0, 0, 0);;" href="../HTML/sobre.html">Quem somos?</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color: rgb(0, 0, 0);"aria-expanded="false">
-                  Mais opções
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../HTML/catalogo.html">Catálogo</a></li>
-                  <li><a class="dropdown-item" href="#">Localização</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Lançamentos</a></li>
-                </ul>
-              </li>
+<br>
 
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Enviar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-</body>
-</html>
+    <h1>Real Madrid</h1>
+
+    <h2>História: </h2>
+    <p>
+        O Real Madrid foi fundado em 6 de março de 1902 como Madrid Football Club. Em 1920, o clube recebeu o título de "Real" (que significa "Real" em espanhol) do rei Alfonso XIII, passando a ser chamado de Real Madrid.<br><br>
+        O clube é conhecido por contratar jogadores de destaque mundial, alcançando seu ápice durante a chamada "Era dos Galácticos" no início dos anos 2000, quando jogadores como Zinedine Zidane, Luís Figo, Ronaldo e David Beckham vestiram a camisa do clube.<br><br>
+        Nos anos 2010, o Real Madrid venceu a Liga dos Campeões da UEFA quatro vezes em cinco anos (2014, 2016, 2017 e 2018). Este período foi marcado pela presença de jogadores como Cristiano Ronaldo, Sergio Ramos e Luka Modrić, além do técnico Zinedine Zidane.
+    </p>
+
+    <h2>Elenco Atual (2024): </h2>
+    <p>
+        <strong>Goleiros:</strong><br>
+        Thibaut Courtois, Andriy Lunin<br><br>
+
+        <strong>Defensores:</strong><br>
+        Dani Carvajal, Éder Militão, David Alaba, Antonio Rüdiger, Ferland Mendy, Nacho Fernández<br><br>
+
+        <strong>Meio-campistas:</strong><br>
+        Luka Modrić, Toni Kroos, Eduardo Camavinga, Aurélien Tchouaméni, Federico Valverde<br><br>
+
+        <strong>Atacantes:</strong><br>
+        Vinícius Júnior, Rodrygo, Karim Benzema (até 2023), Joselu, Brahim Díaz
+    </p>
+
+    <h2>Principais Títulos: </h2>
+    <p>
+        <strong>Nacionais:</strong><br>
+        La Liga: 35 títulos<br>
+        Copa del Rey: 20 títulos<br>
+        Supercopa da Espanha: 12 títulos<br><br>
+
+        <strong>Internacionais:</strong><br>
+        Liga dos Campeões da UEFA: 14 títulos<br>
+        Liga Europa da UEFA: 2 títulos<br>
+        Supercopa da UEFA: 5 títulos<br>
+        Copa Intercontinental: 3 títulos<br>
+        Mundial de Clubes da FIFA: 7 títulos
+    </p>
+{% endblock %}
+

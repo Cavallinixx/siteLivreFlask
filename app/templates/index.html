@@ -12,7 +12,7 @@
     <body class="bg-black text-light" >
         <nav class="navbar navbar-expand-lg" style="background-color:rgba(255, 255, 255, 0.87);">
             <div class="container-fluid">
-              <a class="navbar-brand" style="color: rgb(0, 0, 0);"  href="#">Fanáticos</a>
+              <a class="navbar-brand" style="color: rgb(0, 0, 0);"  href="/index">Fanáticos</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -20,10 +20,10 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"  style="color: rgb(0, 0, 0);" href="#">Pagina Inicial</a>
+                    <a class="nav-link active" aria-current="page"  style="color: rgb(0, 0, 0);" href="/index">Pagina Inicial</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" style="color: rgb(0, 0, 0);;" href="#">Quem somos?</a>
+                    <a class="nav-link" style="color: rgb(0, 0, 0);;" href="/sobre">Quem somos?</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color: rgb(0, 0, 0);"aria-expanded="false">
@@ -41,8 +41,9 @@
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
                   <button class="btn btn-outline-success"  type="submit" >Enviar</button>
+                    <a href="/login" class="btn btn-outline-success" role="button">Login</a>
 
-                    <button class="btn btn-outline-success" type="submit" onclick="location.href=templates/login.html">login</button>
+
                 </form>
 
               </div>
@@ -51,7 +52,7 @@
 
           <h2 style="color:rgb(0, 0, 0); background-color:rgba(255, 255, 255, 0.87);" class="fst-italic">Principais Produtos: </h2>
           <br><br>
-             </div>
+
            <!--Carrosel-->
            <div id="carouselExample" class="carousel slide" >
             <div class="carousel-inner">
@@ -75,17 +76,17 @@
             </button>
             <br><br><br>
       </div>
-     <a href="../HTML/palmeiras.html">
+     <a href="/palmeiras">
          <img src="{{url_for('static',filename='Imagens/logo palmeiras')}}" class="float-start" width="5%" alt="2024">
 
       </a>
 
-      <a href="../HTML/vasco.html">
+      <a href="/vasco">
           <img src="{{url_for('static',filename='Imagens/Escudo_Vasco_2015.png')}}" class="float-end" width="5%" alt="2024">
 
       </a>
 
-      <a href="../HTML/real.html">
+      <a href="/real">
           <img src="{{url_for('static',filename='Imagens/Real_Madrid.png')}}" class="mx-auto d-block" width="5%" alt="2024">
 
       </a>
