@@ -2,36 +2,39 @@
 {% block conteudo %}
 <body class="">
     <div class="p-3 mb-2 bg-black text-white">
-        <form class="form">
+        <form class="form" action="/cadastrarUsuario" method="POST">
             <p class="title">Cadastro </p>
             <p class="message"></p>
                 <div class="flex">
                 <label>
-                    <input class="input" type="text" placeholder="" required="">
-                    <span>Primeiro Nome</span>
+                    <input class="input" type="text" name="usuario" placeholder="" required="">
+                    <span>Usuário:</span>
                 </label>
 
                 <label>
-                    <input class="input" type="text" placeholder="" required="">
-                    <span>Sobrenome</span>
+                    <input class="input" type="text" name="senha" placeholder="" required="">
+                    <span>Senha:</span>
                 </label>
             </div>
 
             <label>
-                <input class="input" type="email" placeholder="" required="">
-                <span>Email</span>
+                <input class="input" type="number" name="telefone" placeholder="" required="">
+                <span>Telefone:</span>
             </label>
 
             <label>
-                <input class="input" type="password" placeholder="" required="">
-                <span>Password</span>
+                <input class="input" type="number" name="idade" placeholder="" required="">
+                <span>Idade:</span>
             </label>
             <label>
-                <input class="input" type="password" placeholder="" required="">
-                <span>Confirmar password</span>
+                <input class="input" type="number" name="cep" placeholder="" required="">
+                <span>CEP:</span>
             </label>
             <button class="submit">Criar</button>
             <p class="signin">Já tem uma conta ? <a href="/login">Entrar</a> </p>
+
+            <a href="/crud">CRUD</a><br><br>
+
         </form>
     </div>
 </body>
