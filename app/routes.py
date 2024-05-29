@@ -35,6 +35,12 @@ def vasco():
 @app.route('/crud')
 def crud():
     return render_template('crud.html', titulo="CRUD", nome="Vitor Cavallini")
+
+@app.route('/adm')
+def adm():
+    return render_template('adm.html', titulo="Administrador", nome="Vitor Cavallini")
+
+
 @app.route('/cadastrarUsuario', methods=['POST'])
 def cadastrarUsuario():
     try:
@@ -65,8 +71,8 @@ def listarIndividual():
         dicionario = requisicao.json()
         idCadastro = ""
         for codigo in dicionario:
-            usuario = dicionario[codigo]['usuario']
-            if usuario=="Vitor":
+            usuario = dicionario[codigo]['']
+            if usuario == "Vitor Cavallini":
                 idCadastro = codigo
         return idCadastro
     except Exception as e:
@@ -87,8 +93,11 @@ def atualizar():
 @app.route('/excluir')
 def excluir():
     try:
-        requisicao = requests.delete(f'{link}/;cadastrar/-NySNSADmCFbENf0xj11/.json')
+        requisicao = requests.delete(f'{link}/cadastrar/-NySNSADmCFbENf0xj11/.json')
         return "Excluido com suceeso"
 
     except Exception as e:
         return f'Ocorreu um erro\n\n + {e}'
+
+
+
