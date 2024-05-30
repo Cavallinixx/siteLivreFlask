@@ -1,18 +1,33 @@
 {% extends 'base.html' %}
 {% block conteudo %}
 
-	<div class="">
-		<h2>Bem vindo ADM!</h2>
-		<h4>Você esta no CRUD, escolha a opção desejada: </h4>
-			<br>
-			<br>
-			   <a href="/listar">Consultar Tudo</a><br><br>
-			   <a href="/listarIndividual">Consultar Individual</a><br><br>
-			   <a href="/atualizar">Atualizar</a><br><br>
-			   <a href="/excluir">Excluir</a><br><br>
-			<br>
-			<br>
-			<br>
-			<br>
-	</div>
+<body class="">
+
+    <div class="p-3 mb-2 bg-black text-white">
+		<h2>Seja Bem-Vindo, ADM!!</h2>
+        <br><br>
+        <form class="form" action="/cadastrarUsuario" method="POST">
+            <p class="title">CRUD </p>
+            <p class="submit">Escolha a opção desejada: </p>
+			<div class="btn">
+                <a href="\listar" class="button2">Consultar</a>
+            </div>
+
+			<div class="btn">
+                <a href="\listarIndividual" class="button2">Consultar Individual</a>
+            </div>
+
+           <div class="btn">
+                 <a href="\atualizar" class="button2">Atualizar</a>
+            </div>
+            <div class="btn">
+                  <a href="\excluir" class="button3">Excluir</a>
+            </div>
+
+            <p class="signin">Já tem uma conta ? <a href="/login">Entrar</a> </p>
+        </form>
+        <br><br><br><br>
 {% endblock %}
+    </div>
+</body>
+

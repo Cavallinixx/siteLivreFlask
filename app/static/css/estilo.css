@@ -65,6 +65,7 @@
   padding-right: 0.8em; /* Diminuído o padding */
   border-radius: 5px;
   margin-right: 0.5em;
+  display: center;
   border: none;
   outline: none;
   transition: .4s ease-in-out;
@@ -79,8 +80,8 @@
 
 .button2 {
   padding: 0.3em; /* Diminuído o padding */
-  padding-left: 1.3em; /* Diminuído o padding */
-  padding-right: 1.3em; /* Diminuído o padding */
+  padding-left: 3.0em; /* Diminuído o padding */
+  padding-right: 3.0em; /* Diminuído o padding */
   border-radius: 5px;
   border: none;
   outline: none;

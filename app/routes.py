@@ -1,3 +1,5 @@
+import this
+
 from app import app
 from flask import render_template
 from flask import request
@@ -69,7 +71,7 @@ def listarIndividual():
     try:
         requisicao = requests.get(f'{link}/cadastrar/.json') #Solicitar os dados que estão no banco
         dicionario = requisicao.json()
-        idCadastro = ""
+        idCadastro = {""}
         for codigo in dicionario:
             usuario = dicionario[codigo]['']
             if usuario == "Vitor Cavallini":
@@ -83,7 +85,7 @@ def listarIndividual():
 @app.route('/atualizar')
 def atualizar():
     try:
-        dados = {"nome" : "Gabriela"}#Parâmetro de atualização
+        dados = {"nome": "Lucca"}#Parâmetro de atualização
         requisicao = requests.patch(f'{link}/cadastrar/-NySNSADmCFbENf0xj11/.json', data=json.dumps(dados))
         return "Atualzado com sucesso!"
 
@@ -94,10 +96,17 @@ def atualizar():
 def excluir():
     try:
         requisicao = requests.delete(f'{link}/cadastrar/-NySNSADmCFbENf0xj11/.json')
-        return "Excluido com suceeso"
-
+        return "Excluido com sucesso!"
     except Exception as e:
         return f'Ocorreu um erro\n\n + {e}'
+
+
+
+
+
+
+
+
 
 
 
